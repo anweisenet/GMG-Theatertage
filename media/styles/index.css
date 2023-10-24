@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+	--background: #e1e1e1;
+	--nav-background: #4CAF50;
+	--nav-background-secondary: #6caf50;
+	--nav-background-secondary-accent: #236425;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+body {
+	width: 100%;
+	min-height: 100%;
+}
+
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+
+	@media (max-width: 650px) {
+		width: 4px;
+	}
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #2C2C32;
+}
+
+div::-webkit-scrollbar-track {
+	border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #8e8e92;
+	border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #C8C8C9;
+}
+

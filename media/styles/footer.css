@@ -1,0 +1,93 @@
+.footer {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, .25), rgba(0, 0, 0, 0) 15px);
+}
+
+.footer:before {
+	margin: 5px 0 10px 0;
+	content: '';
+	width: 80%;
+	height: 2px;
+	background: rgba(0, 0, 0, .05);
+}
+
+
+.footer .info {
+	display: flex;
+	gap: 40px;
+}
+
+.footer .logo {
+	max-width: 200px;
+	max-height: 200px;
+
+	@media (max-width: 900px) {
+		max-width: 175px;
+		max-height: 175px;
+	}
+	@media (max-width: 750px) {
+		max-width: 150px;
+		max-height: 150px;
+	}
+	@media (max-width: 650px) {
+		max-width: 125px;
+		max-height: 125px;
+	}
+	@media (max-width: 550px) {
+		display: none;
+	}
+}
+
+.footer .sections {
+	margin-top: 55px;
+	display: flex;
+	gap: 20px;
+	font-size: 14px;
+	font-family: "Open Sans", sans-serif;
+
+	@media (max-width: 900px) {
+		margin-top: 40px;
+	}
+	@media (max-width: 750px) {
+		margin-top: 25px;
+		font-size: 13px;
+	}
+	@media (max-width: 650px) {
+		margin-top: 20px;
+	}
+}
+
+.footer .sections .section {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	@media (max-width: 750px) {
+		gap: 5px;
+	}
+}
+
+.footer .sections .section .header {
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+}
+
+.footer .sections .section .links {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	@media (max-width: 750px) {
+		gap: 1px;
+	}
+}
+
+.footer .credits {
+	font-size: 15px;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+}
