@@ -1,11 +1,14 @@
-const navInteraction = document.getElementById("nav-interaction");
+const navOpen = document.getElementById("nav-open");
+const navClose = document.getElementById("nav-close");
 const navTarget = document.getElementById("nav-target");
 
 let navShown = false;
 
-navInteraction.onclick = (event) => {
+const handler = (event) => {
   navShown = !navShown;
 
   if (navShown) navTarget.classList.add("show")
   else navTarget.classList.remove("show");
-}
+};
+navOpen.onclick = handler;
+navClose.onclick = handler;
